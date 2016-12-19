@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ferranflacar.saerugranbluesimple.MainActivity">
+
+    <org.xwalk.core.XWalkView
+        android:id="@+id/xwalkWebView"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        >
+
+    </org.xwalk.core.XWalkView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp"
+        android:layout_gravity="bottom|left"
+        app:srcCompat="@drawable/reloadbar_gbf"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:id="@+id/bt_back"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="8dp"
+        android:id="@+id/bt_mypage"
+        android:visibility="visible" />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="53dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="67dp"
+        android:id="@+id/bt_reload"
+        android:visibility="visible" />
+
+</FrameLayout>
